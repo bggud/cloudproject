@@ -1,0 +1,234 @@
+<html>
+<head>
+	<title>Cloud - USER1</title>
+	<style type="text/css">
+	body{
+		background-image: url('Cloud.jpg');
+		background-repeat: repeat;
+		background-size: cover ;
+		margin-top: 0px;
+		margin-left: 0;
+		
+	}
+	ul{
+		list-style-type: none;
+		margin-top: 0px;
+		padding: 0;
+		width: 150px;
+		background-color: #2C3E50;
+		height: 100%;
+		position: fixed;
+	}
+	li a {
+
+   		 display: block;
+   		 text-decoration: none;
+   		 color: #C0C0C0;
+   		 font-weight: bold;
+   		 padding:8px 0 8px 16px;
+	}
+	li a:hover {
+    	background-color: #555;
+    	color: white;
+	}
+	li div{
+
+		width: 100px;
+		height: 150px;
+		border-radius: 50px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover
+	}
+	.history{
+		font-size: 15px;
+		margin-top: 30px;
+		margin-left: 200px;
+		position: absolute;
+		color: #C0C0C0;
+   		 font-weight: bold;
+	}
+	.historyP{
+		width: 900px;
+		position: relative;
+		margin-top: 10px;
+		color: #C0C0C0;
+   		border-width: 10px;
+		background-color: #2C3E50;
+		border-style: solid;
+		border-color: #C0C0C0;
+		border-radius: 20px;
+		padding: 15px 15px 15px 15px ;
+		padding-left: 10px;
+		height: 200px;
+	}
+	button{
+		color: #2C3E50;
+		text-align: center;
+		padding: 3px;
+		font-size: 10px;
+		width: 150px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	
+	form input{
+		background-color: #2C3E50;
+		border-bottom:1px solid;
+		text-align: center;
+		padding: 10px 10px 10px 5px;
+		border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: 1px;
+	border-left-width: medium;
+	border-top-style: none;
+border-right-style: none;
+border-bottom-style: solid;
+border-left-style: none;
+border-top-color: -moz-use-text-color;
+border-right-color: -moz-use-text-color;
+border-bottom-color: #CBCBCB;
+border-left-color: -moz-use-text-color;
+color: #C0C0C0;
+	}
+	.account{
+		width: 250px;
+	}
+	.aSize{
+		height: 100px;
+	}
+
+.my{
+		background-color: #2C3E50;
+		text-align: center;
+
+border-style: none;
+width: 50px;
+color: #C0C0C0;
+	}
+
+	.my1{
+		background-color: #2C3E50;
+		text-align: center;
+		font-weight: bold;
+		font-size: 20px;
+border-style: none;
+width: 100px;
+color: #C0C0C0;
+	}
+				li div img{
+		width: 100px;
+		height: 100px;
+		background-position: center;
+		border-radius: 150px ;
+		border-color : #C0C0C0;;
+		border-style: solid;
+		border-width: 3px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}		li form input.special {
+		background-color: #2C3E50;
+   		 display: block;
+   		 text-decoration: none;
+   		 color: #C0C0C0;
+   		 font-weight: bold;
+   		 padding:8px 0 8px 16px;
+   		 padding-bottom: 0px ;
+   		 font-size: 17px;
+   		 font-style: Arial ;
+   		 margin-top : 50px;
+		 border-style: none;
+	}	
+
+	</style>
+</head>
+<body>
+	
+	<ul>
+		<li> <div>
+		<script type="text/javascript">
+		var ai
+		ai = document.cookie
+		document.write("<img src='/prfPic/"+ai[3]+".jpg' alt='DisplayPicture' height='150px' width='150px' 	/>") 
+
+		</script>
+			
+
+
+
+			<FORM enctype="multipart/form-data" action="../cgi-bin/new1.cgi" method="post">
+				<script type="text/javascript">
+				 a = document.cookie
+				 document.write("<input type='hidden' value="+a+" name='receivedId'  >")
+				</script>
+				<input  type="file" name="FILE" required>
+				<center>
+				<br />
+				<INPUT type='submit'value="Upload"></INPUT>
+				</center>
+			</form>
+
+
+
+			
+		</div></li>
+		
+		<li class="special"> <a href="../cgi-bin/final.cgi"> </a>
+		<FORM enctype="multipart/form-data" action="../cgi-bin/final.cgi" method="post">
+				<script type="text/javascript">
+				a = document.cookie
+				document.write("<input type='hidden' value="+a+" name='receivedId'  >")
+				</script>
+				<br />
+				<INPUT class="my1" type='submit'value="Profile" class="special" ></INPUT>
+				</form>
+				</li>
+
+
+		<li class="special"> 
+		<FORM enctype="multipart/form-data" action="../cgi-bin/trying.cgi" method="post">
+				<script type="text/javascript">
+				a = document.cookie
+				document.write("<input type='hidden' value="+a+" name='receivedId'  >")
+				</script>
+				<INPUT class="my1" width="50px" type='submit'value="History" class="special" ></INPUT>
+				</form>
+				</li>
+
+		<li> <a href="saas.html">	SAAS 	</a>	</li>
+		<li> <a href="staas.html">	Staas </a>	</li>
+		<li> <a href="iaas1.html">	IAAS	</a>	</li>
+		<li> <a href="security.html">	Security	</a>	</li>
+		<li> <a href="docker.html">	Other Features	</a>	</li>
+		<li> <a href="help.html">	Help	</a>	</li>
+		<li> <a href="contact.html">	Contact Us	</a>	</li>
+		<li> <a href="logout.html">	Log Out	</a>	</li>
+	</ul>
+	<p >
+			<div class='history'>
+				<h2>About Us</h2>
+					<div class='historyP aSize' width="300px" >
+					
+					We are simply Cloud Service Providers. A cloud provider is a company that offers some component of cloud computing – typically Infrastructure as a Service (IaaS), Software as a Service (SaaS) or Platform as a Service (PaaS) – to other businesses or individuals. Cloud providers are sometimes referred to as cloud service providers or CSPs.
+					</div>
+					<br />
+					<br />
+					<h2>SAAS :</h2>
+					<div class='historyP aSize' width="300px">
+					Software as a Service (SaaS) is what most people mean when they say "the Cloud." SaaS provides a complete software solution. This software could be email management, calendaring, enterprise resouce planning (ERP), customer relationship management (CRM), documentation management, and so on. The easiest way to think about SaaS is that it is some type of standard software package that can be used on demand and is paid for by subscription, by use, by advertising, or by sharing information (such as email addresses) of users.
+					</div><br /><br />
+					<h2>StAAS :</h2>
+					<div class='historyP aSize' width="300px">
+					Storage as a service (StAAS) is an architecture model in which a provider provides digital storage on their own infrastructure. Storage as a service can be implemented as a business model in which a large service provider rents space in their storage infrastructure on a subscription basis. The economy of scale in the service provider's infrastructure theoretically allows them to provide storage much more cost effectively than most individuals or corporations can provide their own storage, when total cost of ownership is considered.
+					</div><br/><br/>
+					<h2>IAAS :</h2>
+					<div class='historyP aSize' width="300px">
+					Infrastructure as a Service (IaaS) is two steps down from Software as a Service (SaaS) in the Cloud Computing Stack. Instead of ready-made applications or services, developement tools, databases, etc., IaaS provides the underlying operating systems, security, networking, and servers for developing such applications, services, and for deploying development tools, databases, etc.
+					</div><br />
+			</div>
+			
+		</p>
+	</body>
+</html>
+		
+</html>

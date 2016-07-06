@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAST CLASS</title>
+
+	<style type="text/css">
+	#bgedit{
+		background-color: white;
+	}
+	</style>
+</head>
+<body id="bgedit">
+	<script type="text/javascript">
+         
+            var count = 0;
+            
+            document.write("Loop" + "<br />");
+            do{
+               document.write("number : " + count + "<br />");
+               count++;
+            }
+            
+            while (count < 5);
+            document.write ("Loop finish!");
+         
+      </script>
+      <script type="text/javascript">
+         
+            var count;
+            document.write("Loop" + "<br />");
+         
+            for(count = 0; count < 10; count++){
+               document.write("number : " + count );
+               document.write("<br />");
+            }
+         
+            document.write("Loop finish!");
+  
+      </script>
+      <script type="text/javascript">
+        
+            var newa;
+            document.write("Navigator  Prop<br /> ");
+         
+            for (newa in navigator) {
+               document.write(newa);
+               document.write("<br />");
+            }
+            document.write("newa!");
+         
+      </script>
+      <script>
+function mynfunction() {
+    var x = document.getElementsByTagName("STYLE")[0];
+    document.getElementById("bgedit").innerHTML = x.innerHTML;
+}
+</script>
+<script>
+function mynewfunction() {
+    var x = document.createElement("STYLE");
+    var t = document.createTextNode("body {font: 20px verdana;}");
+    x.appendChild(t);
+    document.head.appendChild(x);
+}
+</script>
+<script>
+function myafunction() {
+    var x = document.createElement("A");
+    var t = document.createTextNode("GOOGLE");
+    x.setAttribute("href", "http://www.google.com");
+    x.appendChild(t);
+    document.body.appendChild(x);
+}
+</script>
+<script>
+function startajax() {
+  var xhttp;
+  if (window.XMLHttpRequest) {
+   
+    xhttp = new XMLHttpRequest();
+    } else {
+ 
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("bgedit").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "my-file.txt", true);
+  xhttp.send();
+}
+</script>
+<input type="button" value="click me" onclick="mynfunction()">
+<input type="button" value="click me 2" onclick="mynewfunction()">
+<input type="button" value="click me 3" onclick="myafunction()">
+<input type="button" value="click me 4 AJAX" onclick="startajax()">
+<a onclick="127.0.0.1/cgi-bin/ram.py" href="#">CLICK ME FOR RAM</a>
+</body>
+</html>

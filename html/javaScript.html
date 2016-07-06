@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> JAVASCRIPT CLASS</title>
+	<script type="text/javascript" src="new.js">
+
+	</script>
+</head>
+<body>
+<script type="text/javascript">
+		document.write("Hello World");
+</script>
+<script type="text/javascript">
+	var1=10;
+	var2=20;
+	document.write(var1+var2);
+	var x ='fdd';
+	document.write("<br />"+x);
+	function anyName(){
+		alert("Don't you dare");
+
+	}
+	if(a==10){
+		document.write(a);
+	}
+	var a="45";
+	switch(a){
+		case "45" : document.write("155555555555555555555");break;
+		default : document.write("3434343");
+		case "1" : document.write("I am One");
+	}
+/*	anyName();*/
+</script>
+<script language="javascript" type="text/javascript">
+function executeMe(){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("changeMe").innerHTML = xhttp.responseText;
+    }
+  };
+  var query= "?counter=" + "5" ;
+  xhttp.open("GET", "../cgi-bin/iframe.php"+query, true);
+  xhttp.send(null);
+}
+</script>
+				<form style="display:inline;">
+
+		<input type="hidden" name="counter" value="5"/>
+			<input type="submit" onclick="executeMe()" value="Launch - {0}"/>
+			
+			
+			</form>
+			<div id="changeMe">
+			</div>
+<input type="button" onclick="anyName()" value = "Click me"/>
+</body>
+</html>

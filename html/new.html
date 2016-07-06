@@ -1,0 +1,18 @@
+<html>
+<body>
+<form enctype="multipart/form-data" action="../cgi-bin/new.cgi" method="post">
+<p>File: <input type="file" name="file"></p>
+<p><input type="submit" value="Upload"></p>
+<input type="button" onclick="cread()" value="cread">
+<input type="hidden"  value="">
+<script type="text/javascript">
+	a=document.cookie;
+	function cread() {
+		
+		document.write("<input type='hidden'  value="+a+">")
+	}
+</script>
+</form>
+</body>
+</html>
+

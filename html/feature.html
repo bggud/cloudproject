@@ -1,0 +1,258 @@
+<html>
+<head>
+	<title>Cloud - USER1</title>
+	<style type="text/css">
+	body{
+		background-image: url('Cloud.jpg');
+		background-repeat: repeat;
+		background-size: cover ;
+		margin-top: 0px;
+		margin-left: 0;
+		
+	}
+	ul{
+		list-style-type: none;
+		margin-top: 0px;
+		padding: 0;
+		width: 150px;
+		background-color: #2C3E50;
+		height: 100%;
+		position: fixed;
+	}
+	li a {
+
+   		 display: block;
+   		 text-decoration: none;
+   		 color: #C0C0C0;
+   		 font-weight: bold;
+   		 padding:8px 0 8px 16px;
+	}
+	li a:hover {
+    	background-color: #555;
+    	color: white;
+	}
+	li div{
+
+		width: 100px;
+		height: 150px;
+		border-radius: 50px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover
+	}
+	.history{
+		font-size: 15px;
+		margin-top: 30px;
+		margin-left: 200px;
+		position: absolute;
+		color: #C0C0C0;
+   		 font-weight: bold;
+	}
+	.historyP{
+		width: 900px;
+		position: relative;
+		margin-top: 10px;
+		color: #C0C0C0;
+   		border-width: 10px;
+		background-color: #2C3E50;
+		border-style: solid;
+		border-color: #C0C0C0;
+		border-radius: 20px;
+		padding: 15px 15px 15px 15px ;
+		padding-left: 10px;
+		height: 350px;
+	}
+	select{
+		width: 150px;
+		height: 40px;
+		text-align: center;
+		color:  #C0C0C0;
+		border-width: 5px;
+		background-color: #2C3E50;
+		border-style: solid;
+		border-color: #C0C0C0;
+		border-radius: 20px;
+		font-weight: bold;
+	}
+	button{
+		color: #2C3E50;
+		text-align: center;
+		padding: 3px;
+		font-size: 10px;
+		width: 150px;
+		font-size: 20px;
+		font-weight: bold;
+
+	}
+
+.my{
+		background-color: #2C3E50;
+		text-align: center;
+
+border-style: none;
+width: 50px;
+color: #C0C0C0;
+	}
+
+	.my1{
+		background-color: #2C3E50;
+		text-align: center;
+		font-weight: bold;
+		font-size: 20px;
+border-style: none;
+width: 100px;
+color: #C0C0C0;
+	}
+				li div img{
+		width: 100px;
+		height: 100px;
+		background-position: center;
+		border-radius: 150px ;
+		border-color : #C0C0C0;;
+		border-style: solid;
+		border-width: 3px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}	
+		li form input.special {
+		background-color: #2C3E50;
+   		 display: block;
+   		 text-decoration: none;
+   		 color: #C0C0C0;
+   		 font-weight: bold;
+   		 padding:8px 0 8px 16px;
+   		 padding-bottom: 0px ;
+   		 font-size: 17px;
+   		 font-style: Arial ;
+   		 margin-top : 50px;
+		 border-style: none;
+	}	
+
+
+		form input{
+		background-color: #2C3E50;
+		border-bottom:1px solid;
+		text-align: center;
+		padding: 10px 10px 10px 5px;
+		border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: 1px;
+	border-left-width: medium;
+	border-top-style: none;
+border-right-style: none;
+border-bottom-style: solid;
+border-left-style: none;
+border-top-color: -moz-use-text-color;
+border-right-color: -moz-use-text-color;
+border-bottom-color: #CBCBCB;
+border-left-color: -moz-use-text-color;
+color: #C0C0C0;
+width: 400PX;
+	}
+	</style>
+</head>
+<body>
+	
+	
+
+
+	<ul>
+		<li> <div>
+		<script type="text/javascript">
+		var ai
+		ai = document.cookie
+		document.write("<img src='/prfPic/"+ai[3]+".jpg' alt='DisplayPicture' height='150px' width='150px' 	/>") 
+
+		</script>
+			
+
+
+
+			<FORM enctype="multipart/form-data" action="../cgi-bin/new1.cgi" method="post">
+				<script type="text/javascript">
+				 a = document.cookie
+				 document.write("<input type='hidden' value="+a+" name='receivedId'  >")
+				</script>
+				<input  type="file" name="FILE" required>
+				<center>
+				<INPUT type='submit'value="Upload"></INPUT>
+				</center>
+			</form>
+
+
+
+			
+		</div></li>
+		
+		<li class="special"> <a href="../cgi-bin/final.cgi"> </a>
+		<FORM enctype="multipart/form-data" action="../cgi-bin/final.cgi" method="post">
+				<script type="text/javascript">
+				a = document.cookie
+				document.write("<input type='hidden' value="+a+" name='receivedId'  >")
+				</script>
+				<br />
+				<INPUT class="my1" type='submit'value="Profile" class="special" ></INPUT>
+				</form>
+				</li>
+
+
+		<li class="special"> 
+		<FORM enctype="multipart/form-data" action="../cgi-bin/trying.cgi" method="post">
+				<script type="text/javascript">
+				a = document.cookie
+				document.write("<input type='hidden' value="+a+" name='receivedId'  >")
+				</script>
+				<INPUT class="my1" width="50px" type='submit'value="History" class="special" ></INPUT>
+				</form>
+				</li>
+
+		<li> <a href="saas.html">	SAAS 	</a>	</li>
+		<li> <a href="staas.html">	Staas </a>	</li>
+		<li> <a href="iaas1.html">	IAAS	</a>	</li>
+		<li> <a href="security.html">	Security	</a>	</li>
+		<li> <a href="docker.html">	Other Features	</a>	</li>
+		<li> <a href="help.html">	Help	</a>	</li>
+		<li> <a href="contact.html">	Contact Us	</a>	</li>
+		<li> <a href="logout.html">	Log Out	</a>	</li>
+	</ul>
+	<p >
+			<div class='history'>
+				<h2>Docker Instances :</h2><br/>
+					If you want to run 1 or more instances with only a few capabiitites of your concern not the whole OS , use Docker Container.
+					<div class='historyP' width="300px" height="800px">
+
+
+						<center>
+						<form ACTION = "../cgi-bin/temp.cgi" method="post">
+	<script type="text/javascript">
+				a = document.cookie
+				document.write("<input type='hidden' value="+a+" name='receivedId'  >")
+				</script>
+						<center>
+						<br />
+						<br />
+						Instance Name : 
+						
+						<select name="INSTANCE_NAME">
+							<option> Kali</option>
+							<option> CentOS</option>
+						</select>
+						</center>
+						<br /><br />
+							<input type="TEXT" placeholder="Number of instances to be launched" name="TOTAL_INSTANCES" required/><br /><br />
+
+							</p>
+							<center>
+							<br />
+							<button>Launch </button>
+							<br /><br />
+							</center>
+						</form>
+					
+					</div>
+		</p>
+		</center>
+	</body>
+</html>
+		
+</html>

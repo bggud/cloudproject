@@ -1,0 +1,24 @@
+
+#red{
+	font-size:250px;
+	
+}
+#blue{
+	color:blue;
+	border:dashed
+	border-width:10px;
+	margin-left:150;
+}
+.tree{
+	font-size:50px
+}
+.img{
+	position :relative;
+	margin-left:100px;
+}
+h1,h2,h3{
+	color:blue;
+}
+h4,h5,h6{
+	color:green;
+}

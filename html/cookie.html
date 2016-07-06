@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cookie</title>
+</head>
+<body>
+<script type="text/javascript">
+	 a = document.cookie
+
+	function cread() {
+++++6		document.write("<input type='text' placeholder='"+a+"' name="cookie" value=a >")
+	}
+	<button onclick="delcook('rcookie')" name="logout" class="lgout" value="Sign out">Sign Out</button>
+	<form class="osform" action="http://localhost/cgi-bin/iaas.cgi" onsubmit="document.getElementById('cooki').value=document.cookie" method="get">
+	</form>
+	<script type="text/javascript">
+	function delcook(name)
+	{
+		document.cookie=name+'=;Path=/;Expires=Thu,01 Jan 1970 00:00:010 GMT;';
+	}
+</script>
+<br><br>
+<input type="textfield" name="cook" id="cooki" style="display:none;">
+</script>
+
+</body>
+</html>
+
+
+ 
